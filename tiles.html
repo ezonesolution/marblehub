@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wall & Floor Tiles | Marble Hub – Chiara, Burari, West Bengal</title>
+
+    <!-- Basic SEO -->
+    <meta name="description" content="Browse wall tiles, floor tiles, bathroom tiles, kitchen tiles and outdoor tiles at Marble Hub, Chiara, Burari, West Bengal. Modern digital tiles and vitrified tiles for homes and commercial projects across West Bengal.">
+    <meta name="keywords" content="tiles West Bengal, wall tiles shop Chiara, floor tiles Burari, bathroom tiles showroom, kitchen tiles West Bengal, vitrified tiles, digital tiles, Marble Hub tiles">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap");
+
+        :root {
+            --primary-dark: #1a1a1a;
+            --primary-blue: #0056b3;
+            --text-grey: #666;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+            --border-color: #e5e5e5;
+            --accent-soft: #eef4ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+            color: var(--primary-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .top-bar {
+            background: #f1f1f1;
+            font-size: 0.8rem;
+            padding: 8px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-grey);
+        }
+
+        .top-bar i {
+            margin-right: 5px;
+            color: var(--primary-blue);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 5%;
+        }
+
+        .logo {
+            font-family: "Playfair Display", serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--primary-dark);
+            letter-spacing: 1px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-dark);
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: transparent;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 6px 10px;
+            cursor: pointer;
+        }
+
+        .menu-toggle i {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+        }
+
+        /* Hero for Tiles Page – using real <img> */
+        .hero-tiles {
+            position: relative;
+            height: 70vh;
+            min-height: 480px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            color: var(--white);
+            background-color: #f3f3f3;
+        }
+
+        .hero-tiles-bg {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .hero-tiles-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1);
+            transform-origin: center;
+            animation: heroZoom 22s ease-in-out infinite alternate;
+            filter: brightness(1.03);
+        }
+
+        @keyframes heroZoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        .hero-tiles-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            background: linear-gradient(
+                90deg,
+                rgba(0,0,0,0.65) 0%,
+                rgba(0,0,0,0.45) 40%,
+                rgba(0,0,0,0.18) 100%
+            );
+        }
+
+        .hero-tiles-content {
+            position: relative;
+            z-index: 3;
+            max-width: 660px;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0,0,0,0.55);
+            border-radius: 999px;
+            padding: 6px 14px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+
+        .hero-tag i {
+            color: #ffd166;
+        }
+
+        .hero-tiles-content h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 14px;
+        }
+
+        .hero-tiles-content h1 span {
+            color: #f3f6ff;
+        }
+
+        .hero-tiles-content p {
+            font-size: 1.05rem;
+            margin-bottom: 22px;
+            max-width: 560px;
+            font-weight: 300;
+        }
+
+        .hero-cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            align-items: center;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 14px 30px;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 999px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+        }
+
+        .btn-primary:hover {
+            background-color: #004494;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .btn-outline-light {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.7);
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .btn-outline-light i {
+            font-size: 0.9rem;
+        }
+
+        .hero-bottom-meta {
+            margin-top: 16px;
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .hero-bottom-meta span {
+            margin-right: 14px;
+        }
+
+        .hero-bottom-meta i {
+            margin-right: 4px;
+            color: #90e0ef;
+        }
+
+        /* Tiles Collection */
+        .tiles-collection {
+            padding: 70px 5% 80px;
+            background: linear-gradient(180deg, #ffffff 0%, #f4f6fb 100%);
+        }
+
+        .section-title {
+            margin-bottom: 40px;
+            max-width: 780px;
+            margin-inline: auto;
+            text-align: center;
+        }
+
+        .section-title span.section-sub {
+            display: inline-block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-blue);
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .section-title h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--text-grey);
+            font-size: 1rem;
+        }
+
+        .tiles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 26px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tile-card {
+            border-radius: 16px;
+            overflow: hidden;
+            background: var(--white);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            border: 1px solid #e4e8f5;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .tile-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.14);
+            border-color: rgba(0,86,179,0.4);
+        }
+
+        .tile-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .tile-card-body {
+            padding: 16px 18px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            flex: 1;
+        }
+
+        .tile-tag {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.9px;
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+
+        .tile-card-body h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 1.3rem;
+        }
+
+        .tile-card-body p {
+            font-size: 0.9rem;
+            color: var(--text-grey);
+        }
+
+        .tile-meta {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            color: #999;
+        }
+
+        .tile-card-footer {
+            padding: 0 18px 16px;
+        }
+
+        .link-small {
+            font-size: 0.85rem;
+            text-decoration: none;
+            color: var(--primary-blue);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .link-small i {
+            font-size: 0.8rem;
+        }
+
+        /* SEO content section */
+        .tiles-seo {
+            padding: 70px 5% 70px;
+            background-color: var(--white);
+        }
+
+        .tiles-seo-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .tiles-seo-inner h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2.1rem;
+            margin-bottom: 14px;
+        }
+
+        .tiles-seo-inner p {
+            margin-bottom: 14px;
+            color: var(--text-grey);
+            font-size: 1rem;
+        }
+
+        .tiles-seo-inner ul {
+            margin-left: 18px;
+            margin-top: 4px;
+            color: var(--text-grey);
+            font-size: 0.95rem;
+        }
+
+        .tiles-seo-inner ul li {
+            margin-bottom: 6px;
+        }
+
+        /* Extra section: finishes & guidance */
+        .tiles-guide {
+            padding: 70px 5% 80px;
+            background: var(--light-bg);
+        }
+
+        .tiles-guide-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .tiles-guide-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .tiles-guide-header h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2.1rem;
+            margin-bottom: 8px;
+        }
+
+        .tiles-guide-header p {
+            color: var(--text-grey);
+        }
+
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .guide-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 18px 20px;
+            border: 1px solid #dde3f5;
+            box-shadow: 0 10px 25px rgba(15,23,42,0.06);
+        }
+
+        .guide-step {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-blue);
+            margin-bottom: 4px;
+            font-weight: 700;
+        }
+
+        .guide-card h3 {
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+        }
+
+        .guide-card p {
+            font-size: 0.9rem;
+            color: var(--text-grey);
+        }
+
+        .tiles-guide-cta {
+            margin-top: 26px;
+            text-align: center;
+        }
+
+        /* CTA banner */
+        .cta-banner {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 40px 5% 45px;
+            text-align: center;
+        }
+
+        .cta-banner h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .cta-banner p {
+            margin-bottom: 20px;
+            font-size: 0.98rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #999;
+            padding: 60px 5% 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-bottom: 1px solid #333;
+            padding-bottom: 30px;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            text-transform: uppercase;
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a {
+            color: #999;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 16px;
+            font-size: 0.75rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-tiles {
+                height: auto;
+                min-height: 0;
+                padding: 70px 5% 40px;
+            }
+
+            .hero-tiles-content h1 {
+                font-size: 2.4rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .nav-right {
+                gap: 10px;
+            }
+
+            .menu-toggle {
+                display: inline-flex;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 5%;
+                background: #ffffff;
+                border-top: 1px solid var(--border-color);
+                display: none;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 4px 0;
+            }
+
+            .hero-tiles-content p {
+                font-size: 0.98rem;
+            }
+
+            .hero-cta-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .tiles-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .guide-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-tiles-content h1 {
+                font-size: 2rem;
+            }
+
+            .btn-primary,
+            .btn-outline-light {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span><i class="fa-solid fa-phone"></i> Call Us: 9002804201</span>
+        <span><i class="fa-solid fa-location-dot"></i> Chiara, Burari, West Bengal 721137</span>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Marble Hub</div>
+            <div class="nav-right">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="marble.html">Marble</a></li>
+                    <li><a href="tiles.html" class="active">Tiles</a></li>
+                    <li><a href="granite.html">Granite</a></li>
+                    <li><a href="sanitary.html">Sanitary Ware</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-tiles">
+        <div class="hero-tiles-bg">
+            <img src="https://images.unsplash.com/photo-1582066534935-13930cf10b96?q=80&w=2000&auto=format&fit=crop"
+                 alt="Modern bathroom tiles">
+        </div>
+        <div class="hero-tiles-overlay"></div>
+        <div class="hero-tiles-content">
+            <div class="hero-tag">
+                <i class="fa-solid fa-border-all"></i>
+                Wall & Floor Tiles Collections
+            </div>
+            <h1>Modern Tiles for <span>Bathrooms, Kitchens & Living Spaces</span></h1>
+            <p>
+                Marble Hub in Chiara, Burari offers a wide range of wall tiles, floor tiles, bathroom tiles,
+                kitchen tiles and outdoor tiles – perfect for homes, showrooms and commercial projects
+                across West Bengal.
+            </p>
+            <div class="hero-cta-row">
+                <a href="#tiles-collection" class="btn-primary">Explore Tile Ranges</a>
+                <a href="tel:9002804201" class="btn-outline-light">
+                    <i class="fa-solid fa-phone"></i> Talk to Tile Expert
+                </a>
+            </div>
+            <div class="hero-bottom-meta">
+                <span><i class="fa-solid fa-location-dot"></i> Easy access from nearby towns & highways</span>
+                <span><i class="fa-solid fa-truck"></i> Delivery across West Bengal</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tiles Collection Cards -->
+    <section class="tiles-collection" id="tiles-collection">
+        <div class="section-title">
+            <span class="section-sub">Our Tile Range</span>
+            <h2>Designer Wall & Floor Tiles for Every Room</h2>
+            <p>
+                Choose from digital wall tiles, vitrified floor tiles, anti-skid bathroom tiles and
+                kitchen backsplash tiles – all displayed in practical, real-life combinations.
+            </p>
+        </div>
+
+        <div class="tiles-grid">
+            <!-- Card 1 -->
+            <article class="tile-card">
+                <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=900&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/900x500/1a1a1a/ffffff?text=Living+Room+Tiles';"
+                     alt="Living room floor tiles in modern interior">
+                <div class="tile-card-body">
+                    <span class="tile-tag">Living Room</span>
+                    <h3>Vitrified Floor Tiles</h3>
+                    <p>Scratch-resistant vitrified tiles for living rooms and bedrooms with subtle, modern textures.</p>
+                    <span class="tile-meta">Sizes: 2x2, 2x4, large format options</span>
+                </div>
+                <div class="tile-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Ask about living room tiles <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="tile-card">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=900&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/900x500/333333/ffffff?text=Bathroom+Tiles';"
+                     alt="Bathroom wall and floor tiles">
+                <div class="tile-card-body">
+                    <span class="tile-tag">Bathrooms</span>
+                    <h3>Anti-Skid Bathroom Tiles</h3>
+                    <p>Wall and floor tiles that balance safety, easy cleaning and a fresh, hotel-style look.</p>
+                    <span class="tile-meta">Finishes: matte, anti-skid, glossy wall tiles</span>
+                </div>
+                <div class="tile-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Get bathroom tile ideas <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="tile-card">
+                <img src="https://images.unsplash.com/photo-1588854337221-4cf3b3c2a4b8?q=80&w=900&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/900x500/555555/ffffff?text=Kitchen+Tiles';"
+                     alt="Kitchen backsplash tiles behind stove">
+                <div class="tile-card-body">
+                    <span class="tile-tag">Kitchens</span>
+                    <h3>Kitchen Backsplash & Floor Tiles</h3>
+                    <p>Easy-to-clean tiles for kitchen walls and floors that handle heat, stains and daily use.</p>
+                    <span class="tile-meta">Patterns: subway, stone-look, designer prints</span>
+                </div>
+                <div class="tile-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Plan your kitchen tiles <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="tile-card">
+                <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=900&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/900x500/777777/ffffff?text=Office+Tiles';"
+                     alt="Office space with large format tiles">
+                <div class="tile-card-body">
+                    <span class="tile-tag">Commercial</span>
+                    <h3>Large Format Tiles</h3>
+                    <p>Clean, seamless tiles for showrooms, offices and reception lobbies with a professional finish.</p>
+                    <span class="tile-meta">Ideal for: showrooms, corporate spaces</span>
+                </div>
+                <div class="tile-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Discuss commercial requirements <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="tile-card">
+                <img src="https://images.unsplash.com/photo-1600573472591-ee6981cf35cf?q=80&w=900&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/900x500/444444/ffffff?text=Outdoor+Tiles';"
+                     alt="Outdoor and parking tiles">
+                <div class="tile-card-body">
+                    <span class="tile-tag">Outdoor & Parking</span>
+                    <h3>Outdoor & Parking Tiles</h3>
+                    <p>High-strength, textured tiles for balconies, terraces, driveways and parking areas.</p>
+                    <span class="tile-meta">Features: anti-skid, heavy-load friendly</span>
+                </div>
+                <div class="tile-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Get outdoor tile suggestions <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="tile-card">
+                <img src="https://images.unsplash.com/photo-1588854337221-4deb1f3f3e52?q=80&w=900&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/900x500/222222/ffffff?text=Designer+Tiles';"
+                     alt="Designer decorative wall tiles">
+                <div class="tile-card-body">
+                    <span class="tile-tag">Feature Walls</span>
+                    <h3>Digital & Decorative Wall Tiles</h3>
+                    <p>3D, printed and textured designer tiles to highlight TV walls, headboards and accent corners.</p>
+                    <span class="tile-meta">Use in: living rooms, bedrooms, reception areas</span>
+                </div>
+                <div class="tile-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Explore designer tile options <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- SEO Content About Tile Shop -->
+    <section class="tiles-seo">
+        <div class="tiles-seo-inner">
+            <h2>Marble Hub – Wall & Floor Tiles Showroom in Chiara, Burari</h2>
+            <p>
+                Marble Hub is not only about marble and granite – we also run a focused
+                wall and floor tiles section for customers across West Bengal. At our
+                tiles showroom in Chiara, Burari, you can see full-size displays of bathroom tiles,
+                kitchen tiles, bedroom tiles and outdoor tiles arranged in real combinations.
+            </p>
+            <p>
+                Instead of choosing from a small printed catalogue, you can compare real tiles,
+                check how grout lines look and understand how colours change in natural light.
+                Our team explains which tiles are better for wet areas, which are easier to clean
+                and which options work best for heavy footfall.
+            </p>
+            <p>
+                As a local tiles shop, Marble Hub offers:
+            </p>
+            <ul>
+                <li>Digital wall tiles, vitrified floor tiles and ceramic tiles in multiple sizes and finishes.</li>
+                <li>Tiles for bathrooms, kitchens, bedrooms, balconies, showrooms and office spaces.</li>
+                <li>Practical guidance on tile layout, skirting height and matching grout shades.</li>
+                <li>Doorstep delivery of tiles across West Bengal with safe packing and loading support.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Extra Guidance Section -->
+    <section class="tiles-guide">
+        <div class="tiles-guide-inner">
+            <div class="tiles-guide-header">
+                <h2>How We Help You Pick the Right Tile Finish</h2>
+                <p>Finishes and sizes make a big difference – we keep it simple and clear.</p>
+            </div>
+
+            <div class="guide-grid">
+                <div class="guide-card">
+                    <div class="guide-step">Finish 01 · Matte / Anti-Skid</div>
+                    <h3>Safe for Bathrooms & Balconies</h3>
+                    <p>
+                        Matte and anti-skid tiles reduce the chance of slipping in wet areas. We show you
+                        options that still look modern while staying practical for daily use.
+                    </p>
+                </div>
+                <div class="guide-card">
+                    <div class="guide-step">Finish 02 · Glossy</div>
+                    <h3>Bright Walls & Easy Cleaning</h3>
+                    <p>
+                        Glossy wall tiles reflect more light and are easy to wipe clean – perfect for bathroom
+                        walls and kitchen backsplashes where stains are common.
+                    </p>
+                </div>
+                <div class="guide-card">
+                    <div class="guide-step">Finish 03 · Textured / Stone-Look</div>
+                    <h3>Feature Walls & Outdoor Spaces</h3>
+                    <p>
+                        Textured tiles add character to TV walls, reception backdrops and exterior areas. We help
+                        you pick patterns that complement the rest of your design.
+                    </p>
+                </div>
+                <div class="guide-card">
+                    <div class="guide-step">Size & Layout</div>
+                    <h3>Choosing the Right Size</h3>
+                    <p>
+                        From standard 1x1 and 2x2 to large format slabs, we suggest tile sizes based on room
+                        dimensions so your floor looks spacious and well-balanced.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tiles-guide-cta">
+                <a href="contact.html" class="btn-primary">Book a Visit to Our Tiles Section</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <h2>Need Help Finalising Tiles for Your Home or Project?</h2>
+        <p>Call or visit Marble Hub in Chiara, Burari to see tiles in person and get honest, practical suggestions for your site.</p>
+        <a href="tel:9002804201" class="btn-outline-light">
+            <i class="fa-solid fa-phone"></i> Call 9002804201
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Marble Hub</h4>
+                <p>Chiara, Burari, West Bengal 721137</p>
+                <p>Phone: 9002804201</p>
+            </div>
+            <div class="footer-col">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="marble.html">Italian & Indian Marble</a></li>
+                    <li><a href="tiles.html">Wall & Floor Tiles</a></li>
+                    <li><a href="granite.html">Granite</a></li>
+                    <li><a href="sanitary.html">Sanitary Ware</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Marble Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener("click", () => {
+                    navLinks.classList.toggle("open");
+                });
+            }
+        });
+    </script>
+</body>
+</html>

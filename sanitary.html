@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanitary Ware & Bath Fittings | Marble Hub – Chiara, Burari, West Bengal</title>
+
+    <!-- Basic SEO -->
+    <meta name="description" content="Explore basins, wall-hung toilets, faucets, shower panels and complete bathroom sanitary ware at Marble Hub, Chiara, Burari, West Bengal. Modern, durable bath fittings for homes and commercial projects across West Bengal.">
+    <meta name="keywords" content="sanitary ware West Bengal, bathroom fittings Chiara, basins and faucets Burari, wall hung toilet showroom, shower panels West Bengal, bathroom accessories, Marble Hub sanitary ware">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap");
+
+        :root {
+            --primary-dark: #1a1a1a;
+            --primary-blue: #0056b3;
+            --text-grey: #666;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+            --border-color: #e5e5e5;
+            --accent-soft: #eef4ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+            color: var(--primary-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .top-bar {
+            background: #f1f1f1;
+            font-size: 0.8rem;
+            padding: 8px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-grey);
+        }
+
+        .top-bar i {
+            margin-right: 5px;
+            color: var(--primary-blue);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 5%;
+        }
+
+        .logo {
+            font-family: "Playfair Display", serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--primary-dark);
+            letter-spacing: 1px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-dark);
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: transparent;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 6px 10px;
+            cursor: pointer;
+        }
+
+        .menu-toggle i {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+        }
+
+        /* Hero for Sanitary Page – using real <img> */
+        .hero-sanitary {
+            position: relative;
+            height: 70vh;
+            min-height: 480px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            color: var(--white);
+            background-color: #f3f3f3;
+        }
+
+        .hero-sanitary-bg {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .hero-sanitary-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1);
+            transform-origin: center;
+            animation: heroZoom 22s ease-in-out infinite alternate;
+            filter: brightness(1.03);
+        }
+
+        @keyframes heroZoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        .hero-sanitary-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            background: linear-gradient(
+                90deg,
+                rgba(0,0,0,0.65) 0%,
+                rgba(0,0,0,0.45) 40%,
+                rgba(0,0,0,0.18) 100%
+            );
+        }
+
+        .hero-sanitary-content {
+            position: relative;
+            z-index: 3;
+            max-width: 660px;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0,0,0,0.55);
+            border-radius: 999px;
+            padding: 6px 14px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+
+        .hero-tag i {
+            color: #ffd166;
+        }
+
+        .hero-sanitary-content h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 14px;
+        }
+
+        .hero-sanitary-content h1 span {
+            color: #f3f6ff;
+        }
+
+        .hero-sanitary-content p {
+            font-size: 1.05rem;
+            margin-bottom: 22px;
+            max-width: 560px;
+            font-weight: 300;
+        }
+
+        .hero-cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            align-items: center;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 14px 30px;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 999px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+        }
+
+        .btn-primary:hover {
+            background-color: #004494;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .btn-outline-light {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.7);
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .btn-outline-light i {
+            font-size: 0.9rem;
+        }
+
+        .hero-bottom-meta {
+            margin-top: 16px;
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .hero-bottom-meta span {
+            margin-right: 14px;
+        }
+
+        .hero-bottom-meta i {
+            margin-right: 4px;
+            color: #90e0ef;
+        }
+
+        /* Sanitary Collection */
+        .sanitary-collection {
+            padding: 70px 5% 80px;
+            background: linear-gradient(180deg, #ffffff 0%, #f4f6fb 100%);
+        }
+
+        .section-title {
+            margin-bottom: 40px;
+            max-width: 780px;
+            margin-inline: auto;
+            text-align: center;
+        }
+
+        .section-title span.section-sub {
+            display: inline-block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-blue);
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .section-title h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--text-grey);
+            font-size: 1rem;
+        }
+
+        .sanitary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 26px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .sanitary-card {
+            border-radius: 16px;
+            overflow: hidden;
+            background: var(--white);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            border: 1px solid #e4e8f5;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .sanitary-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.14);
+            border-color: rgba(0,86,179,0.4);
+        }
+
+        .sanitary-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .sanitary-card-body {
+            padding: 16px 18px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            flex: 1;
+        }
+
+        .sanitary-tag {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.9px;
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+
+        .sanitary-card-body h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 1.3rem;
+        }
+
+        .sanitary-card-body p {
+            font-size: 0.9rem;
+            color: var(--text-grey);
+        }
+
+        .sanitary-meta {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            color: #999;
+        }
+
+        .sanitary-card-footer {
+            padding: 0 18px 16px;
+        }
+
+        .link-small {
+            font-size: 0.85rem;
+            text-decoration: none;
+            color: var(--primary-blue);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .link-small i {
+            font-size: 0.8rem;
+        }
+
+        /* SEO content section */
+        .sanitary-seo {
+            padding: 70px 5% 70px;
+            background-color: var(--white);
+        }
+
+        .sanitary-seo-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .sanitary-seo-inner h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2.1rem;
+            margin-bottom: 14px;
+        }
+
+        .sanitary-seo-inner p {
+            margin-bottom: 14px;
+            color: var(--text-grey);
+            font-size: 1rem;
+        }
+
+        .sanitary-seo-inner ul {
+            margin-left: 18px;
+            margin-top: 4px;
+            color: var(--text-grey);
+            font-size: 0.95rem;
+        }
+
+        .sanitary-seo-inner ul li {
+            margin-bottom: 6px;
+        }
+
+        /* Extra section: how we help plan a bathroom */
+        .sanitary-process {
+            padding: 70px 5% 80px;
+            background: var(--light-bg);
+        }
+
+        .sanitary-process-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .sanitary-process-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .sanitary-process-header h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2.1rem;
+            margin-bottom: 8px;
+        }
+
+        .sanitary-process-header p {
+            color: var(--text-grey);
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .process-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 18px 20px;
+            border: 1px solid #dde3f5;
+            box-shadow: 0 10px 25px rgba(15,23,42,0.06);
+        }
+
+        .process-step {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-blue);
+            margin-bottom: 4px;
+            font-weight: 700;
+        }
+
+        .process-card h3 {
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+        }
+
+        .process-card p {
+            font-size: 0.9rem;
+            color: var(--text-grey);
+        }
+
+        .sanitary-process-cta {
+            margin-top: 26px;
+            text-align: center;
+        }
+
+        /* CTA banner */
+        .cta-banner {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 40px 5% 45px;
+            text-align: center;
+        }
+
+        .cta-banner h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .cta-banner p {
+            margin-bottom: 20px;
+            font-size: 0.98rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #999;
+            padding: 60px 5% 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-bottom: 1px solid #333;
+            padding-bottom: 30px;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            text-transform: uppercase;
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a {
+            color: #999;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 16px;
+            font-size: 0.75rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-sanitary {
+                height: auto;
+                min-height: 0;
+                padding: 70px 5% 40px;
+            }
+
+            .hero-sanitary-content h1 {
+                font-size: 2.4rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .nav-right {
+                gap: 10px;
+            }
+
+            .menu-toggle {
+                display: inline-flex;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 5%;
+                background: #ffffff;
+                border-top: 1px solid var(--border-color);
+                display: none;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 4px 0;
+            }
+
+            .hero-sanitary-content p {
+                font-size: 0.98rem;
+            }
+
+            .hero-cta-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .sanitary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-sanitary-content h1 {
+                font-size: 2rem;
+            }
+
+            .btn-primary,
+            .btn-outline-light {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span><i class="fa-solid fa-phone"></i> Call Us: 9002804201</span>
+        <span><i class="fa-solid fa-location-dot"></i> Chiara, Burari, West Bengal 721137</span>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Marble Hub</div>
+            <div class="nav-right">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="marble.html">Marble</a></li>
+                    <li><a href="tiles.html">Tiles</a></li>
+                    <li><a href="granite.html">Granite</a></li>
+                    <li><a href="sanitary.html" class="active">Sanitary Ware</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-sanitary">
+        <div class="hero-sanitary-bg">
+            <img src="https://images.unsplash.com/photo-1582719478171-2f2dfcdf9f9b?q=80&w=2000&auto=format&fit=crop"
+                 alt="Modern bathroom with sanitary ware and fittings">
+        </div>
+        <div class="hero-sanitary-overlay"></div>
+        <div class="hero-sanitary-content">
+            <div class="hero-tag">
+                <i class="fa-solid fa-bath"></i>
+                Sanitary Ware & Bath Fittings
+            </div>
+            <h1>Complete Sanitary Solutions for <span>Modern Bathrooms</span></h1>
+            <p>
+                From basins and wall-hung toilets to faucets, shower panels and accessories, Marble Hub in Chiara,
+                Burari helps you build bathrooms that look good and work smoothly every day.
+            </p>
+            <div class="hero-cta-row">
+                <a href="#sanitary-collection" class="btn-primary">Explore Sanitary Range</a>
+                <a href="tel:9002804201" class="btn-outline-light">
+                    <i class="fa-solid fa-phone"></i> Talk to Bath Expert
+                </a>
+            </div>
+            <div class="hero-bottom-meta">
+                <span><i class="fa-solid fa-location-dot"></i> Easy access from nearby towns & highways</span>
+                <span><i class="fa-solid fa-truck"></i> Delivery across West Bengal</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sanitary Collection Cards -->
+    <section class="sanitary-collection" id="sanitary-collection">
+        <div class="section-title">
+            <span class="section-sub">Our Sanitary Range</span>
+            <h2>Basins, Toilets, Faucets & Shower Solutions</h2>
+            <p>
+                Choose coordinated sanitary ware and bath fittings that match your tiles and make bathrooms easy to
+                maintain for years.
+            </p>
+        </div>
+
+        <div class="sanitary-grid">
+            <!-- Card 1 -->
+            <article class="sanitary-card">
+                <img src="https://images.unsplash.com/photo-1582719478250-cc6c769f5463?q=80&w=900&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/900x500/1a1a1a/ffffff?text=Wash+Basin';"
+                     alt="Counter-top basin in modern bathroom">
+                <div class="sanitary-card-body">
+                    <span class="sanitary-tag">Basins</span>
+                    <h3>Counter, Wall-Hung & Table-Top Basins</h3>
+                    <p>Contemporary basins in multiple shapes and sizes to pair with your granite or marble counters.</p>
+                    <span class="sanitary-meta">Options: round, rectangular, slim edge designs</span>
+                </div>
+                <div class="sanitary-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Match basin with your counter <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="sanitary-card">
+                <img src="https://images.unsplash.com/photo-1582719478250-868f9f4f3b6b?q=80&w=900&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/900x500/333333/ffffff?text=WC+Toilet';"
+                     alt="Wall-hung toilet and concealed cistern">
+                <div class="sanitary-card-body">
+                    <span class="sanitary-tag">Toilets</span>
+                    <h3>Wall-Hung & Floor-Mounted WCs</h3>
+                    <p>Space-saving wall-hung toilets and standard floor-mounted models with efficient flushing systems.</p>
+                    <span class="sanitary-meta">Features: soft-close seat covers, dual flush</span>
+                </div>
+                <div class="sanitary-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Get WC & flush tank options <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="sanitary-card">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=900&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/900x500/555555/ffffff?text=Faucets+%26+Taps';"
+                     alt="Modern chrome faucet on basin">
+                <div class="sanitary-card-body">
+                    <span class="sanitary-tag">Faucets</span>
+                    <h3>Mixers, Basin Taps & Shower Diverters</h3>
+                    <p>Reliable, smooth-operating faucets that complement your tiles and sanitary ware finishes.</p>
+                    <span class="sanitary-meta">Finishes: chrome, matte, premium designs</span>
+                </div>
+                <div class="sanitary-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Ask about faucet ranges <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="sanitary-card">
+                <img src="https://images.unsplash.com/photo-1521449256184-d420c5e63be9?q=80&w=900&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/900x500/777777/ffffff?text=Shower+Panels';"
+                     alt="Shower panel and glass enclosure in bathroom">
+                <div class="sanitary-card-body">
+                    <span class="sanitary-tag">Showers</span>
+                    <h3>Overhead Showers & Shower Panels</h3>
+                    <p>Comfortable shower experiences with rain showers, hand showers and diverter systems.</p>
+                    <span class="sanitary-meta">Ideal for: master bathrooms & guest baths</span>
+                </div>
+                <div class="sanitary-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Plan your shower setup <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="sanitary-card">
+                <img src="https://images.unsplash.com/photo-1552321554-5f5208ec27f2?q=80&w=900&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/900x500/444444/ffffff?text=Bath+Accessories';"
+                     alt="Bathroom accessories like towel rail and soap dish">
+                <div class="sanitary-card-body">
+                    <span class="sanitary-tag">Accessories</span>
+                    <h3>Towel Rails, Soap Dishes & More</h3>
+                    <p>Accessories that keep your bathroom organised and match your main fittings and finishes.</p>
+                    <span class="sanitary-meta">Set-based and individual accessory options</span>
+                </div>
+                <div class="sanitary-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Get matching accessories <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="sanitary-card">
+                <img src="https://images.unsplash.com/photo-1564540586988-aa4e53cfa78e?q=80&w=900&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/900x500/222222/ffffff?text=Complete+Bathroom';"
+                     alt="Full modern bathroom set with tiles and fittings">
+                <div class="sanitary-card-body">
+                    <span class="sanitary-tag">Complete Sets</span>
+                    <h3>Coordinated Bathroom Solutions</h3>
+                    <p>Help in choosing tiles, sanitary ware and fittings together so the full bathroom looks coordinated.</p>
+                    <span class="sanitary-meta">Best for: new homes & full renovations</span>
+                </div>
+                <div class="sanitary-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Plan a full bathroom set <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- SEO Content About Sanitary Warehouse/Showroom -->
+    <section class="sanitary-seo">
+        <div class="sanitary-seo-inner">
+            <h2>Marble Hub – Sanitary Ware & Bath Fittings in Chiara, Burari</h2>
+            <p>
+                A bathroom is more than just tiles and a basin – it has to feel comfortable, stay dry and work
+                smoothly every single day. At Marble Hub, Chiara, Burari, we maintain a practical range of sanitary
+                ware and bath fittings that suit West Bengal homes and local water conditions.
+            </p>
+            <p>
+                Instead of random pieces, we encourage customers to think in sets – basin with matching faucet,
+                shower system that fits the water pressure, and accessories that match the finish. This makes your
+                bathroom look more premium and also reduces maintenance issues later.
+            </p>
+            <p>
+                As a local sanitary ware supplier, Marble Hub offers:
+            </p>
+            <ul>
+                <li>Basins, WCs, faucets, showers and accessories that pair well with our marble, tiles and granite ranges.</li>
+                <li>Guidance on choosing right-height basins, comfortable WC models and leak-free fittings.</li>
+                <li>Suggestions for master bathrooms, guest bathrooms and common toilets based on usage.</li>
+                <li>Delivery of sanitary ware and fittings across West Bengal with coordinated dispatch with your tiles and stone.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Extra Section: How We Help You Plan Bathrooms -->
+    <section class="sanitary-process">
+        <div class="sanitary-process-inner">
+            <div class="sanitary-process-header">
+                <h2>How We Help You Plan a Better Bathroom</h2>
+                <p>Small planning details now can save a lot of repair and rework later.</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-step">Step 1 · Layout & Points</div>
+                    <h3>Check Plumbing & Electrical Points</h3>
+                    <p>
+                        Bring your bathroom layout or a simple sketch. We help align basins, WCs, showers and geyser
+                        positions with existing points wherever possible.
+                    </p>
+                </div>
+                <div class="process-card">
+                    <div class="process-step">Step 2 · Choose Fittings & Ceramics</div>
+                    <h3>Match Design with Practical Use</h3>
+                    <p>
+                        We suggest sanitary ware and faucets based on who will use the bathroom – seniors, kids,
+                        guests or daily family use – and how easy they are to maintain.
+                    </p>
+                </div>
+                <div class="process-card">
+                    <div class="process-step">Step 3 · Coordinate with Tiles</div>
+                    <h3>Align with Your Tiles & Countertops</h3>
+                    <p>
+                        Since we also supply tiles, marble and granite, we help you select colours and finishes so
+                        the floor, walls and fittings all look coordinated.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sanitary-process-cta">
+                <a href="contact.html" class="btn-primary">Book a Bathroom Planning Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <h2>Setting Up or Renovating a Bathroom?</h2>
+        <p>Call or visit Marble Hub in Chiara, Burari to see sanitary ware, tiles, marble and granite together and plan a balanced bathroom design.</p>
+        <a href="tel:9002804201" class="btn-outline-light">
+            <i class="fa-solid fa-phone"></i> Call 9002804201
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Marble Hub</h4>
+                <p>Chiara, Burari, West Bengal 721137</p>
+                <p>Phone: 9002804201</p>
+            </div>
+            <div class="footer-col">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="marble.html">Italian & Indian Marble</a></li>
+                    <li><a href="tiles.html">Wall & Floor Tiles</a></li>
+                    <li><a href="granite.html">Granite</a></li>
+                    <li><a href="sanitary.html">Sanitary Ware</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Marble Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener("click", () => {
+                    navLinks.classList.toggle("open");
+                });
+            }
+        });
+    </script>
+</body>
+</html>

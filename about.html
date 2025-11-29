@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Marble Hub | Marble, Tiles, Granite & Sanitary Ware – Chiara, Burari, West Bengal</title>
+
+    <!-- Basic SEO -->
+    <meta name="description" content="Marble Hub is a multi-product showroom in Chiara, Burari, West Bengal, supplying marble, tiles, granite and sanitary ware for homes and commercial projects across West Bengal. Learn how we help you plan better floors, kitchens and bathrooms.">
+    <meta name="keywords" content="about Marble Hub, marble shop Chiara Burari, tiles granite sanitary ware West Bengal, stone and sanitary showroom, building materials Chiara Burari">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap");
+
+        :root {
+            --primary-dark: #1a1a1a;
+            --primary-blue: #0056b3;
+            --text-grey: #666;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+            --border-color: #e5e5e5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+            color: var(--primary-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .top-bar {
+            background: #f1f1f1;
+            font-size: 0.8rem;
+            padding: 8px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-grey);
+        }
+
+        .top-bar i {
+            margin-right: 5px;
+            color: var(--primary-blue);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 5%;
+        }
+
+        .logo {
+            font-family: "Playfair Display", serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--primary-dark);
+            letter-spacing: 1px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-dark);
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: transparent;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 6px 10px;
+            cursor: pointer;
+        }
+
+        .menu-toggle i {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+        }
+
+        /* Hero – About */
+        .hero-about {
+            position: relative;
+            height: 55vh;
+            min-height: 420px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            color: var(--white);
+            background-color: #f3f3f3;
+        }
+
+        .hero-about-bg {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .hero-about-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1);
+            transform-origin: center;
+            animation: heroZoom 22s ease-in-out infinite alternate;
+            filter: brightness(1.02);
+        }
+
+        @keyframes heroZoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.08); }
+        }
+
+        .hero-about-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            background: linear-gradient(
+                90deg,
+                rgba(0,0,0,0.65) 0%,
+                rgba(0,0,0,0.45) 40%,
+                rgba(0,0,0,0.18) 100%
+            );
+        }
+
+        .hero-about-content {
+            position: relative;
+            z-index: 3;
+            max-width: 650px;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0,0,0,0.55);
+            border-radius: 999px;
+            padding: 6px 14px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+
+        .hero-tag i {
+            color: #ffd166;
+        }
+
+        .hero-about-content h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 2.7rem;
+            line-height: 1.1;
+            margin-bottom: 14px;
+        }
+
+        .hero-about-content p {
+            font-size: 1.02rem;
+            margin-bottom: 18px;
+            max-width: 540px;
+            font-weight: 300;
+        }
+
+        .hero-meta {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .hero-meta span {
+            margin-right: 14px;
+        }
+
+        .hero-meta i {
+            margin-right: 4px;
+            color: #90e0ef;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 12px 26px;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 999px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+        }
+
+        .btn-primary:hover {
+            background-color: #004494;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        /* About content section */
+        .about-main {
+            padding: 70px 5% 60px;
+            background: #ffffff;
+        }
+
+        .about-layout {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: minmax(0,1.7fr) minmax(0,1.3fr);
+            gap: 40px;
+        }
+
+        .about-text h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .about-text h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-blue);
+            margin-bottom: 6px;
+        }
+
+        .about-text p {
+            color: var(--text-grey);
+            margin-bottom: 12px;
+            font-size: 0.98rem;
+        }
+
+        .about-highlight {
+            margin-top: 10px;
+            padding: 12px 14px;
+            border-left: 3px solid var(--primary-blue);
+            background: #f5f7ff;
+            font-size: 0.92rem;
+            color: #444;
+        }
+
+        .about-bullets {
+            margin-top: 14px;
+        }
+
+        .about-bullets h4 {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .about-bullets ul {
+            list-style: none;
+        }
+
+        .about-bullets ul li {
+            margin-bottom: 6px;
+            font-size: 0.94rem;
+            color: var(--text-grey);
+        }
+
+        .about-bullets ul li i {
+            color: var(--primary-blue);
+            margin-right: 6px;
+            font-size: 0.8rem;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0,1fr));
+            gap: 16px;
+            margin-top: 10px;
+        }
+
+        .stat-card {
+            border-radius: 14px;
+            border: 1px solid #e4e8f5;
+            padding: 14px 16px;
+            background: #f9fbff;
+        }
+
+        .stat-number {
+            font-family: "Playfair Display", serif;
+            font-size: 1.5rem;
+            margin-bottom: 3px;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--text-grey);
+        }
+
+        .about-side-box {
+            border-radius: 18px;
+            border: 1px solid #e4e8f5;
+            padding: 20px 22px;
+            background: linear-gradient(145deg, #f9fbff 0%, #ffffff 100%);
+            box-shadow: 0 10px 25px rgba(15,23,42,0.06);
+        }
+
+        .about-side-box h3 {
+            font-size: 1.05rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            color: var(--primary-blue);
+        }
+
+        .about-side-box p {
+            font-size: 0.94rem;
+            color: var(--text-grey);
+            margin-bottom: 10px;
+        }
+
+        .check-list {
+            list-style: none;
+            margin-top: 6px;
+            margin-bottom: 12px;
+        }
+
+        .check-list li {
+            font-size: 0.93rem;
+            margin-bottom: 6px;
+            color: #444;
+        }
+
+        .check-list li i {
+            color: #16a34a;
+            margin-right: 6px;
+            font-size: 0.8rem;
+        }
+
+        .about-side-meta {
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 6px;
+        }
+
+        /* Why Choose section (secondary, more visual) */
+        .why-about {
+            padding: 65px 5% 70px;
+            background: var(--light-bg);
+        }
+
+        .why-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .why-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .why-header h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2rem;
+            margin-bottom: 6px;
+        }
+
+        .why-header p {
+            color: var(--text-grey);
+            font-size: 0.98rem;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .why-card {
+            border-radius: 18px;
+            background: #ffffff;
+            border: 1px solid #dde3f5;
+            padding: 18px 20px;
+            box-shadow: 0 10px 25px rgba(15,23,42,0.06);
+        }
+
+        .why-icon {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #cbd5f5;
+            margin-bottom: 8px;
+        }
+
+        .why-icon i {
+            font-size: 0.95rem;
+            color: var(--primary-blue);
+        }
+
+        .why-card h3 {
+            font-size: 1.05rem;
+            margin-bottom: 4px;
+        }
+
+        .why-card p {
+            font-size: 0.92rem;
+            color: var(--text-grey);
+        }
+
+        /* How we work section */
+        .process-about {
+            padding: 60px 5% 70px;
+            background: #ffffff;
+        }
+
+        .process-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .process-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .process-header h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2rem;
+            margin-bottom: 6px;
+        }
+
+        .process-header p {
+            color: var(--text-grey);
+            font-size: 0.96rem;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+        }
+
+        .process-card {
+            border-radius: 16px;
+            border: 1px solid #e4e8f5;
+            padding: 16px 18px;
+            background: #f9fbff;
+        }
+
+        .process-step {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-blue);
+            margin-bottom: 4px;
+            font-weight: 700;
+        }
+
+        .process-card h3 {
+            font-size: 1.02rem;
+            margin-bottom: 4px;
+        }
+
+        .process-card p {
+            font-size: 0.9rem;
+            color: var(--text-grey);
+        }
+
+        /* CTA banner */
+        .cta-banner {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 40px 5% 45px;
+            text-align: center;
+        }
+
+        .cta-banner h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .cta-banner p {
+            margin-bottom: 20px;
+            font-size: 0.98rem;
+        }
+
+        .btn-outline-light {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.7);
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .btn-outline-light i {
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #999;
+            padding: 60px 5% 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-bottom: 1px solid #333;
+            padding-bottom: 30px;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            text-transform: uppercase;
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a {
+            color: #999;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 16px;
+            font-size: 0.75rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-about {
+                height: auto;
+                min-height: 0;
+                padding: 60px 5% 35px;
+            }
+
+            .hero-about-content h1 {
+                font-size: 2.3rem;
+            }
+
+            .about-layout {
+                grid-template-columns: minmax(0,1.3fr) minmax(0,1.1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .nav-right {
+                gap: 10px;
+            }
+
+            .menu-toggle {
+                display: inline-flex;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 5%;
+                background: #ffffff;
+                border-top: 1px solid var(--border-color);
+                display: none;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 4px 0;
+            }
+
+            .about-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .about-side-box {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-about-content h1 {
+                font-size: 2rem;
+            }
+
+            .btn-primary,
+            .btn-outline-light {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span><i class="fa-solid fa-phone"></i> Call Us: 9002804201</span>
+        <span><i class="fa-solid fa-location-dot"></i> Chiara, Burari, West Bengal 721137</span>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Marble Hub</div>
+            <div class="nav-right">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="marble.html">Marble</a></li>
+                    <li><a href="tiles.html">Tiles</a></li>
+                    <li><a href="granite.html">Granite</a></li>
+                    <li><a href="sanitary.html">Sanitary Ware</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-about">
+        <div class="hero-about-bg">
+            <img src="https://images.unsplash.com/photo-1523419409543-3e4f83b9b8f2?q=80&w=2000&auto=format&fit=crop"
+                 alt="Showroom with marble, tiles and stone surfaces">
+        </div>
+        <div class="hero-about-overlay"></div>
+        <div class="hero-about-content">
+            <div class="hero-tag">
+                <i class="fa-solid fa-building-columns"></i>
+                About Marble Hub
+            </div>
+            <h1>One Place for Marble, Tiles, Granite & Sanitary Ware</h1>
+            <p>
+                Marble Hub is a multi-product building material showroom based in Chiara, Burari, West Bengal,
+                helping homeowners, contractors and interior designers plan better floors, kitchens and bathrooms.
+            </p>
+            <div class="hero-meta">
+                <span><i class="fa-solid fa-location-dot"></i> Serving Chiara, Burari & projects across West Bengal</span>
+            </div>
+            <a href="contact.html" class="btn-primary">Talk to Our Team</a>
+        </div>
+    </section>
+
+    <!-- Main About Section -->
+    <section class="about-main">
+        <div class="about-layout">
+            <div class="about-text">
+                <h3>Who We Are</h3>
+                <h2>Local Showroom, Practical Guidance, Long-Term Materials</h2>
+                <p>
+                    Marble Hub started with a simple need – customers in and around Chiara and Burari wanted
+                    reliable marble, tiles, granite and sanitary ware under one roof instead of running to
+                    different shops and dealers for each item.
+                </p>
+                <p>
+                    Today, we are a focused destination for stone and bathroom solutions for homes, apartments,
+                    independent houses, showrooms and commercial spaces across West Bengal. Our display is
+                    designed so you can actually see how materials will look together – marble with tiles,
+                    tiles with sanitary ware, granite with kitchen fittings.
+                </p>
+                <p>
+                    We believe in practical, straight-forward advice. If a material is high-maintenance,
+                    we tell you that. If a more budget-friendly option will work just as well in your space,
+                    we suggest that too.
+                </p>
+
+                <div class="about-highlight">
+                    We are not just a marble shop or a tile shop – we are a planning partner for your
+                    floors, kitchens and bathrooms, helping you select materials that look good and work well
+                    in day-to-day life.
+                </div>
+
+                <div class="about-bullets">
+                    <h4>What You’ll Find at Marble Hub</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Italian & Indian marble for floors, stairs, countertops and temples.</li>
+                        <li><i class="fa-solid fa-check"></i> Wall and floor tiles for bathrooms, kitchens, living rooms and outdoors.</li>
+                        <li><i class="fa-solid fa-check"></i> Granite for kitchen platforms, steps, exteriors and heavy-use areas.</li>
+                        <li><i class="fa-solid fa-check"></i> Sanitary ware & bath fittings – basins, WCs, faucets, showers and accessories.</li>
+                    </ul>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Core Product Categories</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">Many</div>
+                        <div class="stat-label">Projects Across West Bengal</div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="about-side-box">
+                <h3>Why Customers Come Back to Us</h3>
+                <p>
+                    Most of our work comes from repeat clients and referrals. People appreciate that we
+                    don’t push products just to close a sale – we help them pick the right material for
+                    the right space.
+                </p>
+                <ul class="check-list">
+                    <li><i class="fa-solid fa-check"></i> Clear explanation of differences between marble, granite and tiles.</li>
+                    <li><i class="fa-solid fa-check"></i> Guidance on finishes, slip-resistance and cleaning needs.</li>
+                    <li><i class="fa-solid fa-check"></i> Coordination with contractors on sizes, quantities and delivery.</li>
+                    <li><i class="fa-solid fa-check"></i> Honest suggestions that respect your budget and timelines.</li>
+                </ul>
+                <p class="about-side-meta">
+                    Whether it’s a small bathroom renovation or a full house build, we treat each project with the
+                    same attention to detail.
+                </p>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Why Choose Marble Hub (About Page Focus) -->
+    <section class="why-about">
+        <div class="why-inner">
+            <div class="why-header">
+                <h2>Why People in Chiara & Burari Choose Marble Hub</h2>
+                <p>Simple processes, clear choices and materials that match your daily use – not just the photo.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3>All Key Materials in One Place</h3>
+                    <p>
+                        Marble, tiles, granite and sanitary ware under one roof – so you can compare colours
+                        and finishes together and avoid mismatched purchases.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3>Practical, Honest Guidance</h3>
+                    <p>
+                        We clearly explain where marble is better, where tiles are sufficient and when granite
+                        is a smarter choice, depending on your space and budget.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <h3>Support Till Material Reaches Site</h3>
+                    <p>
+                        We coordinate loading, transport and basic unloading support, helping your contractor
+                        receive material on time and in good condition.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3>Serving Projects Across West Bengal</h3>
+                    <p>
+                        While our showroom is in Chiara, Burari, we regularly supply materials to projects
+                        across West Bengal through our delivery partners.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work With You -->
+    <section class="process-about">
+        <div class="process-inner">
+            <div class="process-header">
+                <h2>How We Help You Choose the Right Materials</h2>
+                <p>Whether you’re a homeowner, contractor or interior designer, we follow a simple, clear process.</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-card">
+                    <div class="process-step">Step 1 · Understand Your Site</div>
+                    <h3>Share Plans, Photos or Basic Measurements</h3>
+                    <p>
+                        You can bring your architect drawing, rough sketch or even mobile photos. We ask where
+                        you want to use marble, tiles, granite and sanitary ware and what look you’re aiming for.
+                    </p>
+                </div>
+                <div class="process-card">
+                    <div class="process-step">Step 2 · Shortlist Practical Options</div>
+                    <h3>Mix of Looks, Budget & Maintenance</h3>
+                    <p>
+                        We then suggest a few combinations of materials – for floors, walls, counters and bathrooms –
+                        explaining the pros and cons of each, in simple language.
+                    </p>
+                </div>
+                <div class="process-card">
+                    <div class="process-step">Step 3 · Finalise & Deliver</div>
+                    <h3>Lock Lots & Coordinate Delivery</h3>
+                    <p>
+                        Once you’re comfortable with the selection, we finalise quantities, block lots where needed and
+                        plan dispatch so your contractor gets material on time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <h2>Planning Floors, Kitchens or Bathrooms for Your Next Project?</h2>
+        <p>Visit Marble Hub in Chiara, Burari or call us to discuss marble, tiles, granite and sanitary ware options for your site.</p>
+        <a href="tel:9002804201" class="btn-outline-light">
+            <i class="fa-solid fa-phone"></i> Call 9002804201
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Marble Hub</h4>
+                <p>Chiara, Burari, West Bengal 721137</p>
+                <p>Phone: 9002804201</p>
+            </div>
+            <div class="footer-col">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="marble.html">Italian & Indian Marble</a></li>
+                    <li><a href="tiles.html">Wall & Floor Tiles</a></li>
+                    <li><a href="granite.html">Granite</a></li>
+                    <li><a href="sanitary.html">Sanitary Ware</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Marble Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener("click", () => {
+                    navLinks.classList.toggle("open");
+                });
+            }
+        });
+    </script>
+</body>
+</html>

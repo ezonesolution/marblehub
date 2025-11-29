@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Italian & Indian Marble | Marble Hub – Chiara, Burari, West Bengal</title>
+
+    <!-- Basic SEO -->
+    <meta name="description" content="Explore premium Italian marble and Indian marble at Marble Hub, Chiara, Burari, West Bengal. Perfect for luxury flooring, kitchen countertops, staircases, temples and commercial projects across West Bengal.">
+    <meta name="keywords" content="Italian marble West Bengal, Indian marble supplier, marble shop Chiara Burari, marble flooring West Bengal, marble kitchen countertop, marble for staircase, Marble Hub">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap");
+
+        :root {
+            --primary-dark: #1a1a1a;
+            --primary-blue: #0056b3;
+            --text-grey: #666;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+            --border-color: #e5e5e5;
+            --accent-soft: #eef4ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+            color: var(--primary-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .top-bar {
+            background: #f1f1f1;
+            font-size: 0.8rem;
+            padding: 8px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-grey);
+        }
+
+        .top-bar i {
+            margin-right: 5px;
+            color: var(--primary-blue);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 5%;
+        }
+
+        .logo {
+            font-family: "Playfair Display", serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--primary-dark);
+            letter-spacing: 1px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-dark);
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: transparent;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 6px 10px;
+            cursor: pointer;
+        }
+
+        .menu-toggle i {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+        }
+
+        /* Hero for Marble Page */
+        .hero-marble {
+            position: relative;
+            height: 70vh;
+            min-height: 480px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            color: var(--white);
+            background-color: #f3f3f3;
+        }
+
+        .hero-marble::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2000&auto=format&fit=crop")
+                no-repeat center center / cover;
+            transform: scale(1);
+            animation: heroZoom 22s ease-in-out infinite alternate;
+            filter: brightness(1.05);
+        }
+
+        @keyframes heroZoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        .hero-marble-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                90deg,
+                rgba(0,0,0,0.6) 0%,
+                rgba(0,0,0,0.45) 40%,
+                rgba(0,0,0,0.18) 100%
+            );
+        }
+
+        .hero-marble-content {
+            position: relative;
+            z-index: 3;
+            max-width: 650px;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0,0,0,0.55);
+            border-radius: 999px;
+            padding: 6px 14px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+
+        .hero-tag i {
+            color: #ffd166;
+        }
+
+        .hero-marble-content h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 14px;
+        }
+
+        .hero-marble-content h1 span {
+            color: #f3f6ff;
+        }
+
+        .hero-marble-content p {
+            font-size: 1.05rem;
+            margin-bottom: 22px;
+            max-width: 560px;
+            font-weight: 300;
+        }
+
+        .hero-cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            align-items: center;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 14px 30px;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 999px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+        }
+
+        .btn-primary:hover {
+            background-color: #004494;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .btn-outline-light {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.7);
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .btn-outline-light i {
+            font-size: 0.9rem;
+        }
+
+        .hero-bottom-meta {
+            margin-top: 16px;
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .hero-bottom-meta span {
+            margin-right: 14px;
+        }
+
+        .hero-bottom-meta i {
+            margin-right: 4px;
+            color: #90e0ef;
+        }
+
+        /* Marble product cards */
+        .marble-collection {
+            padding: 70px 5% 80px;
+            background: linear-gradient(180deg, #ffffff 0%, #f4f6fb 100%);
+        }
+
+        .section-title {
+            margin-bottom: 40px;
+            max-width: 780px;
+            margin-inline: auto;
+            text-align: center;
+        }
+
+        .section-title span.section-sub {
+            display: inline-block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-blue);
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .section-title h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--text-grey);
+            font-size: 1rem;
+        }
+
+        .marble-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 26px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .marble-card {
+            border-radius: 16px;
+            overflow: hidden;
+            background: var(--white);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            border: 1px solid #e4e8f5;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .marble-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.14);
+            border-color: rgba(0,86,179,0.4);
+        }
+
+        .marble-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .marble-card-body {
+            padding: 16px 18px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            flex: 1;
+        }
+
+        .marble-tag {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.9px;
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+
+        .marble-card-body h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 1.3rem;
+        }
+
+        .marble-card-body p {
+            font-size: 0.9rem;
+            color: var(--text-grey);
+        }
+
+        .marble-meta {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            color: #999;
+        }
+
+        .marble-card-footer {
+            padding: 0 18px 16px;
+        }
+
+        .link-small {
+            font-size: 0.85rem;
+            text-decoration: none;
+            color: var(--primary-blue);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .link-small i {
+            font-size: 0.8rem;
+        }
+
+        /* SEO content section */
+        .marble-seo {
+            padding: 70px 5% 70px;
+            background-color: var(--white);
+        }
+
+        .marble-seo-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .marble-seo-inner h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2.1rem;
+            margin-bottom: 14px;
+        }
+
+        .marble-seo-inner p {
+            margin-bottom: 14px;
+            color: var(--text-grey);
+            font-size: 1rem;
+        }
+
+        .marble-seo-inner ul {
+            margin-left: 18px;
+            margin-top: 4px;
+            color: var(--text-grey);
+            font-size: 0.95rem;
+        }
+
+        .marble-seo-inner ul li {
+            margin-bottom: 6px;
+        }
+
+        /* Extra section: how we help */
+        .marble-process {
+            padding: 70px 5% 80px;
+            background: var(--light-bg);
+        }
+
+        .marble-process-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .marble-process-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .marble-process-header h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2.1rem;
+            margin-bottom: 8px;
+        }
+
+        .marble-process-header p {
+            color: var(--text-grey);
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .process-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 18px 20px;
+            border: 1px solid #dde3f5;
+            box-shadow: 0 10px 25px rgba(15,23,42,0.06);
+        }
+
+        .process-step {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-blue);
+            margin-bottom: 4px;
+            font-weight: 700;
+        }
+
+        .process-card h3 {
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+        }
+
+        .process-card p {
+            font-size: 0.9rem;
+            color: var(--text-grey);
+        }
+
+        .marble-process-cta {
+            margin-top: 26px;
+            text-align: center;
+        }
+
+        /* CTA banner */
+        .cta-banner {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 40px 5% 45px;
+            text-align: center;
+        }
+
+        .cta-banner h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .cta-banner p {
+            margin-bottom: 20px;
+            font-size: 0.98rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #999;
+            padding: 60px 5% 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-bottom: 1px solid #333;
+            padding-bottom: 30px;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            text-transform: uppercase;
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a {
+            color: #999;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 16px;
+            font-size: 0.75rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-marble {
+                height: auto;
+                min-height: 0;
+                padding: 70px 5% 40px;
+            }
+
+            .hero-marble-content h1 {
+                font-size: 2.4rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .nav-right {
+                gap: 10px;
+            }
+
+            .menu-toggle {
+                display: inline-flex;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 5%;
+                background: #ffffff;
+                border-top: 1px solid var(--border-color);
+                display: none;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 4px 0;
+            }
+
+            .hero-marble-content p {
+                font-size: 0.98rem;
+            }
+
+            .hero-cta-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .marble-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-marble-content h1 {
+                font-size: 2rem;
+            }
+
+            .btn-primary,
+            .btn-outline-light {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span><i class="fa-solid fa-phone"></i> Call Us: 9002804201</span>
+        <span><i class="fa-solid fa-location-dot"></i> Chiara, Burari, West Bengal 721137</span>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Marble Hub</div>
+            <div class="nav-right">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="marble.html" class="active">Marble</a></li>
+                    <li><a href="tiles.html">Tiles</a></li>
+                    <li><a href="granite.html">Granite</a></li>
+                    <li><a href="sanitary.html">Sanitary Ware</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-marble">
+        <div class="hero-marble-overlay"></div>
+        <div class="hero-marble-content">
+            <div class="hero-tag">
+                <i class="fa-solid fa-gem"></i>
+                Italian & Indian Marble Collections
+            </div>
+            <h1>Premium Marble for <span>Luxury Floors & Surfaces</span></h1>
+            <p>
+                At Marble Hub, Chiara, Burari, we stock a carefully curated range of
+                Italian marble and Indian marble for homes, showrooms and commercial
+                projects across West Bengal – all under one roof.
+            </p>
+            <div class="hero-cta-row">
+                <a href="#marble-collection" class="btn-primary">View Marble Ranges</a>
+                <a href="tel:9002804201" class="btn-outline-light">
+                    <i class="fa-solid fa-phone"></i> Talk to Marble Expert
+                </a>
+            </div>
+            <div class="hero-bottom-meta">
+                <span><i class="fa-solid fa-location-dot"></i> Easy access from nearby towns & highways</span>
+                <span><i class="fa-solid fa-truck"></i> Delivery across West Bengal</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marble Collection Cards -->
+    <section class="marble-collection" id="marble-collection">
+        <div class="section-title">
+            <span class="section-sub">Our Marble Range</span>
+            <h2>Italian & Indian Marble for Every Kind of Space</h2>
+            <p>
+                From classic white Italian marble to high-strength Indian varieties,
+                Marble Hub offers options for luxury living rooms, kitchens, staircases,
+                temples and commercial lobbies.
+            </p>
+        </div>
+
+        <div class="marble-grid">
+            <!-- Card 1 -->
+            <article class="marble-card">
+                <img src="https://images.unsplash.com/photo-1546863340-2bb9a27b755e?q=80&w=800&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/800x500/1a1a1a/ffffff?text=Italian+Marble';"
+                     alt="Polished Italian marble flooring in living room">
+                <div class="marble-card-body">
+                    <span class="marble-tag">Italian Marble</span>
+                    <h3>Luxury Italian Marble Slabs</h3>
+                    <p>Bright, premium Italian marble with rich veining – ideal for statement floors, lobbies and reception areas.</p>
+                    <span class="marble-meta">Popular: Statuario, Botticino, Carrara-inspired looks</span>
+                </div>
+                <div class="marble-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Get Italian marble prices <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="marble-card">
+                <img src="https://images.unsplash.com/photo-1594577335035-15c4b9c9e198?q=80&w=800&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/800x500/333333/ffffff?text=Indian+Marble';"
+                     alt="Polished Indian marble in hallway">
+                <div class="marble-card-body">
+                    <span class="marble-tag">Indian Marble</span>
+                    <h3>High-Strength Indian Marble</h3>
+                    <p>Cost-effective, durable Indian marble in multiple shades and patterns for both homes and heavy footfall areas.</p>
+                    <span class="marble-meta">Best for: budget-friendly, long-term flooring</span>
+                </div>
+                <div class="marble-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Discuss Indian marble options <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="marble-card">
+                <img src="https://images.unsplash.com/photo-1595521826770-6b0b0c0329c4?q=80&w=800&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/800x500/555555/ffffff?text=Kitchen+Marble';"
+                     alt="Marble kitchen countertop with basin">
+                <div class="marble-card-body">
+                    <span class="marble-tag">Countertops</span>
+                    <h3>Kitchen & Vanity Counter Marble</h3>
+                    <p>Carefully selected marble slabs for countertops and vanities with balanced beauty and maintenance needs.</p>
+                    <span class="marble-meta">Applications: kitchens, islands, wash basins</span>
+                </div>
+                <div class="marble-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Plan your countertop sizes <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="marble-card">
+                <img src="https://images.unsplash.com/photo-1585596721122-5c508eb5293c?q=80&w=800&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/800x500/777777/ffffff?text=Staircase+Marble';"
+                     alt="Marble staircase in modern home">
+                <div class="marble-card-body">
+                    <span class="marble-tag">Stairs & Skirting</span>
+                    <h3>Marble for Staircases & Steps</h3>
+                    <p>Thicker, non-slippery options for staircases, risers and skirting that stay strong and beautiful for years.</p>
+                    <span class="marble-meta">Ideal for: duplex homes, showrooms, offices</span>
+                </div>
+                <div class="marble-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Share staircase sizes <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="marble-card">
+                <img src="https://images.unsplash.com/photo-1582719478250-cc6c769f5463?q=80&w=800&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/800x500/444444/ffffff?text=Temple+Marble';"
+                     alt="White marble temple interior">
+                <div class="marble-card-body">
+                    <span class="marble-tag">Temples & Pooja Rooms</span>
+                    <h3>Pure White Marble for Temples</h3>
+                    <p>Soft-toned, bright marble for temples, pooja rooms and spiritual spaces with a clean, serene finish.</p>
+                    <span class="marble-meta">Finish options: honed, high gloss, edge profiles</span>
+                </div>
+                <div class="marble-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Ask for temple designs <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="marble-card">
+                <img src="https://images.unsplash.com/photo-1549187774-b4e9b0445b41?q=80&w=800&auto=format&fit=crop"
+                     onerror="this.onerror=null;this.src='https://placehold.co/800x500/222222/ffffff?text=Outdoor+Marble';"
+                     alt="Marble used in outdoor patio">
+                <div class="marble-card-body">
+                    <span class="marble-tag">Outdoor & Cladding</span>
+                    <h3>Marble for Outdoor Use</h3>
+                    <p>Textured and treated marble for façades, verandas and semi-outdoor spaces that handle weather better.</p>
+                    <span class="marble-meta">Usage: façade cladding, balcony floors</span>
+                </div>
+                <div class="marble-card-footer">
+                    <a href="contact.html" class="link-small">
+                        Talk about outdoor solutions <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- SEO Content About the Shop -->
+    <section class="marble-seo">
+        <div class="marble-seo-inner">
+            <h2>Marble Hub – Your Marble Shop in Chiara, Burari, West Bengal</h2>
+            <p>
+                Marble Hub is a focused marble supplier based in Chiara, Burari, serving
+                homeowners, builders and interior designers across West Bengal. Instead of
+                showing random samples, we stock full-size slabs so you can actually see the
+                movement, colour and grain before you buy.
+            </p>
+            <p>
+                Whether you want high-end Italian marble for a luxury apartment or durable
+                Indian marble for a family home, our team helps you compare shades, thickness
+                and finishes right at our yard. We guide you on which marble works best for
+                living rooms, kitchens, staircases, temples or commercial spaces, keeping
+                your budget and long-term maintenance in mind.
+            </p>
+            <p>
+                As a local marble shop near you, Marble Hub offers:
+            </p>
+            <ul>
+                <li>Multiple price ranges – from premium imported slabs to value-for-money Indian options.</li>
+                <li>Support with cutting sizes, matching lots and repeat orders for ongoing projects.</li>
+                <li>Doorstep delivery of marble across West Bengal with careful loading and unloading support.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Extra Section: How We Help You Choose the Right Marble -->
+    <section class="marble-process">
+        <div class="marble-process-inner">
+            <div class="marble-process-header">
+                <h2>How We Help You Choose the Right Marble</h2>
+                <p>Simple guidance so you pick the right marble once – and stay happy for years.</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-step">Step 1 · Understanding Your Space</div>
+                    <h3>Share Your Floor Plan & Usage</h3>
+                    <p>
+                        Bring your architect drawing or simple measurements. We note where marble will be
+                        used – floors, countertops, stairs, temples or wall cladding.
+                    </p>
+                </div>
+                <div class="process-card">
+                    <div class="process-step">Step 2 · Shortlisting Options</div>
+                    <h3>Match Look, Budget & Maintenance</h3>
+                    <p>
+                        We show you 3–4 suitable Italian or Indian marble options, explaining how each will
+                        look, how it ages and what maintenance it needs.
+                    </p>
+                </div>
+                <div class="process-card">
+                    <div class="process-step">Step 3 · Final Lot Selection</div>
+                    <h3>Lock the Exact Lot You Like</h3>
+                    <p>
+                        Once you decide, we block that particular lot for your project, arrange safe loading
+                        and coordinate with your contractor for delivery timing.
+                    </p>
+                </div>
+            </div>
+
+            <div class="marble-process-cta">
+                <a href="contact.html" class="btn-primary">Book a Visit to Our Yard</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <h2>Ready to Finalise Marble for Your Project?</h2>
+        <p>Call us or visit Marble Hub in Chiara, Burari to see real slabs and get practical, honest guidance for your site.</p>
+        <a href="tel:9002804201" class="btn-outline-light">
+            <i class="fa-solid fa-phone"></i> Call 9002804201
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Marble Hub</h4>
+                <p>Chiara, Burari, West Bengal 721137</p>
+                <p>Phone: 9002804201</p>
+            </div>
+            <div class="footer-col">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="marble.html">Italian & Indian Marble</a></li>
+                    <li><a href="tiles.html">Wall & Floor Tiles</a></li>
+                    <li><a href="granite.html">Granite</a></li>
+                    <li><a href="sanitary.html">Sanitary Ware</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Marble Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener("click", () => {
+                    navLinks.classList.toggle("open");
+                });
+            }
+        });
+    </script>
+</body>
+</html>
